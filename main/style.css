@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin: 0;
+    font-family: "Epilogue", sans-serif;
+    background: rgb(252,252,218);
+background: -moz-linear-gradient(90deg, rgba(252,252,218,1) 0%, rgba(230,230,179,0.66) %);
+background: -webkit-linear-gradient(90deg, rgba(252,252,218,1) 0%, rgba(230,230,179,0.66) %);
+background: linear-gradient(90deg, rgba(252,252,218,1) 0%, rgba(230,230,179,0.66) %);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcfcda",endColorstr="#e6e6b3",GradientType=1);
+
+}
+
+.navbar {
+    background-color: #20344E;
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    font-style: bold;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.navbar-left,
+.navbar-center,
+.navbar-right {
+    flex: 1;
+}
+
+.navbar-left {
+    text-align: left;
+}
+
+.navbar-center {
+    text-align: center;
+}
+
+.navbar-right {
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.logout{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.card{
+    width: 170px;
+    height: 200px;
+    background: #000;
+}
+
+.main{
+    
+}
