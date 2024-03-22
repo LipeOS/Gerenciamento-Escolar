@@ -1,14 +1,10 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
 
-body{
+body {
     margin: 0;
     font-family: "Epilogue", sans-serif;
-    background: rgb(252,252,218);
-background: -moz-linear-gradient(90deg, rgba(252,252,218,1) 0%, rgba(230,230,179,0.66) %);
-background: -webkit-linear-gradient(90deg, rgba(252,252,218,1) 0%, rgba(230,230,179,0.66) %);
-background: linear-gradient(90deg, rgba(252,252,218,1) 0%, rgba(230,230,179,0.66) %);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcfcda",endColorstr="#e6e6b3",GradientType=1);
+    background: #fcfcda;
+    ;
 
 }
 
@@ -31,14 +27,20 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcfcda",endCo
 
 .navbar-left {
     text-align: left;
+    font-weight: 600;
 }
 
 .navbar-center {
     text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+
 }
 
 .navbar-right {
     text-align: right;
+    font-weight: 600;
     margin-right: 1rem;
 }
 
@@ -49,18 +51,89 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcfcda",endCo
     object-fit: cover;
 }
 
-.logout{
+.logout {
     width: 20px;
     height: 20px;
-    
+
 }
 
-.card{
-    width: 170px;
-    height: 200px;
-    background: #000;
+.card {
+    width: 11.5rem;
+    height: 13rem;
+    background: #20344E;
+    border-radius: 10px;
+    border: solid #000000;
+
 }
 
-.main{
-    
+.main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+
 }
+
+.title {
+    font-size: 15px;
+    text-align: center;
+    color: #fcfcda;
+}
+
+.img-div {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    object-fit: cover;
+    height: 5rem;
+
+
+}
+
+.btn-disciplina {
+    margin-left: 4rem;
+    margin-top: 4rem;
+    color: #fcfcda;
+    padding: 3px 10px 3px;
+    font-weight: bold;
+    background: #000000;
+    border: transparent;
+    border-radius: 2px;
+}
+
+.btn-disciplina:hover {
+    color: #f5f596;
+    background: #171717;
+}
+
+
+/*@media screen and (width: 1366px) and (height: 768px) {
+    .card {
+        width: 13rem;
+        height: 15rem;
+        margin: 5rem;
+        background: #20344E;
+        border-radius: 10px;
+        border: solid #000000;
+    
+    }
+  }
+  
+  @media screen and (width: 1920px) and (height: 1080px) {
+
+  };*/
+  
+  @media screen and (min-width: 1024px) {
+    
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px){
+    
+  }
+
+@media screen and (min-width: 767px) {
+    
+  }
+
+  
