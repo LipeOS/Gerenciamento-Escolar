@@ -27,12 +27,14 @@ body {
 
 .navbar-left {
     text-align: left;
-    font-weight: 600;
+    font-weight: 800;
+    margin-left: 1rem;
+
 }
 
 .navbar-center {
     text-align: center;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 20px;
     letter-spacing: 1px;
 
@@ -108,7 +110,9 @@ body {
 }
 
 
-/*@media screen and (width: 1366px) and (height: 768px) {
+
+  
+  @media screen and (width: 1920px) and (height: 1080px) {
     .card {
         width: 13rem;
         height: 15rem;
@@ -118,11 +122,7 @@ body {
         border: solid #000000;
     
     }
-  }
-  
-  @media screen and (width: 1920px) and (height: 1080px) {
-
-  };*/
+  };
   
   @media screen and (min-width: 1024px) {
     
