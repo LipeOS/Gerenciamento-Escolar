@@ -34,38 +34,54 @@
 
     </div>
 
-    <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Nome</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
 
-
-
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela com Ícone de Exclusão e Descrição</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    
+        <!DOCTYPE html>
+        <html lang="pt-br">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tabela com Ícone de Exclusão e Descrição</title>
+        <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+        
+            <table id="myTable">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Data de Criação</th>
+                    <th>Descrição</th>
+                    <th>Ações</th>
+                    <!-- Botão "+Nova Aula" -->
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>20/02/2023</td>
+                    <td><input type="text" class="description-input" placeholder="Digite a descrição" maxlength="50"></td>
+                    <td><span class="delete-icon">🗑️</span></td>
+                    <!-- Botão "+Nova Aula" -->
+                  </tr>
+                  <!-- Adicione mais linhas conforme necessário -->
+                </tbody>
+              </table>
+        
+        <script src="scripts.js"></script>
+       
+        
+  
+    
 </body>
 </html>

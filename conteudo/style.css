@@ -76,6 +76,31 @@ body {
     margin-top: 2rem;
 }
 
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  .delete-icon {
+    cursor: pointer;
+  }
+  
+  .description-input {
+    width: 15rem; /* Ajuste a largura conforme necessário */
+  }
+  .delete-icon {
+    cursor: pointer;
+  }
+  
   @media screen and (width: 1920px) and (height: 1080px) {
   
   }
