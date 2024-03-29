@@ -1,120 +1,112 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
-
 body {
-    margin: 0;
-    font-family: "Epilogue", sans-serif;
-    background: #fcfcda;
-    ;
-
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
 }
 
 .navbar {
-    background-color: #20344E;
-    color: #fff;
-    font-weight: 500;
-    display: flex;
-    font-style: bold;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-}
-
-.navbar-left,
-.navbar-center,
-.navbar-right {
-    flex: 1;
+  background-color: #20344E;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 .navbar-left {
-    text-align: left;
-    font-weight: 800;
-    margin-left: 1rem;
-
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .navbar-center {
-    text-align: center;
-    font-weight: 800;
-    font-size: 20px;
-    letter-spacing: 1px;
-
+  text-align: center;
+  font-weight: bold;
+  color: #fff; /* Cor mais forte para 'Conteúdo' */
 }
 
 .navbar-right {
-    text-align: right;
-    font-weight: 600;
-    margin-right: 1rem;
+  text-align: right;
 }
 
-.profile-pic {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
+.create-lesson-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.create-lesson-btn:hover{
+  background-color: #3c9d3f;
+  color: rgb(234, 226, 226)
 }
 
-.logout {
-    width: 20px;
-    height: 20px;
-
+.table-container {
+  margin: 20px;
 }
-
-.links{
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
-    font-weight: 500;
-    margin: 0.5rem;
-}
-
-.links:first-child{
-    text-decoration: underline;
-}
-
-.links-div{
-    margin-left: 2rem;
-    margin-top: 2rem;
-}
-
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-  }
-  th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-  }
-  th {
-    background-color: #f2f2f2;
-  }
-  .delete-icon {
-    cursor: pointer;
-  }
-  
-  .description-input {
-    width: 15rem; /* Ajuste a largura conforme necessário */
-  }
-  .delete-icon {
-    cursor: pointer;
-  }
-  
-  @media screen and (width: 1920px) and (height: 1080px) {
-  
-  }
-  
-  @media screen and (min-width: 1024px) {
-    
-  }
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 5px;
+}
 
-  @media screen and (min-width: 768px) and (max-width: 1023px){
-    
-  }
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
 
-@media screen and (min-width: 767px) {
-    
-  }
+th {
+  background-color: #20344E;
+  color: #fff;
+}
 
-  
+td:first-child {
+  width: 10%;
+}
+
+td:nth-child(2) {
+  width: 30%; /* Aumentei a largura da coluna de data */
+}
+
+td:last-child {
+  width: 60%; /* Aumentei a largura da coluna de conteúdo */
+}
+
+.lesson-date {
+  text-align: center;
+}
+
+img{
+  max-width: 30px;
+}
+
+.custom-prompt {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #20344E; /* Cor azul da navbar */
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.prompt-input {
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+}
+
+.prompt-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
