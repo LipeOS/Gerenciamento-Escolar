@@ -21,6 +21,7 @@ body {
 .navbar-center {
   text-align: center;
   font-weight: bold;
+  font-size: 20px;
   color: #fff; /* Cor mais forte para 'Conteúdo' */
 }
 
@@ -109,4 +110,21 @@ img{
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.links-container{
+  margin: 10px;
+  display: flex;
+  
+}
+
+.link{
+  margin: 5px;
+  text-decoration: none;
+  color: #20344E;
+  font-weight: bold;
+}
+
+.link:first-child{
+  text-decoration: underline;
 }
