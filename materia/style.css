@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+  
 body {
     margin: 0;
     font-family: "Epilogue", sans-serif;
@@ -11,12 +13,11 @@ body {
 .navbar {
     background-color: #20344E;
     color: #fff;
-    font-weight: 500;
     display: flex;
     font-style: bold;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 15px;
 }
 
 .navbar-left,

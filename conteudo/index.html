@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/open-book.png" type="image/x-icon">
   <title>Conteúdo</title>
   <style>
     /* Seu código CSS aqui */
@@ -84,7 +85,7 @@
           </nav>
           <div className="links-container">
             <a href="#" className="link">Conteúdo</a>
-            <a href="#" className="link">Frequência</a>
+            <a href="../frequencia/index.html" className="link">Frequência</a>
             <a href="#" className="link">Notas</a>
           </div>
           <div className="table-container">
@@ -114,7 +115,17 @@
       );
     }
 
-      
+    function abrirAba(id) {
+      // Oculta todas as abas
+      var abas = document.getElementsByClassName('conteudo');
+      for (var i = 0; i < abas.length; i++) {
+        abas[i].classList.remove('ativo');
+      }
+
+      // Mostra a aba correspondente ao ID
+      var abaAtiva = document.getElementById(id);
+      abaAtiva.classList.add('ativo');
+    }
     ReactDOM.render(<App />, document.getElementById('root'));
   </script>
 </body>

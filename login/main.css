@@ -1,28 +1,19 @@
-@font-face {
-  font-family: Ubuntu-Regular;
-  src: url(../fonts/ubuntu/Ubuntu-Regular.ttf);
-}
 
-@font-face {
-  font-family: Ubuntu-Bold;
-  src: url(../fonts/ubuntu/Ubuntu-Bold.ttf);
-}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
 }
 
 body,
 html {
   height: 100%;
-  font-family: Ubuntu-Regular, sans-serif;
   background: #20344e;
 }
 
 a {
-  font-family: Ubuntu-Regular;
   font-size: 14px;
   line-height: 1.7;
   color: #ffffff;
@@ -53,7 +44,6 @@ h6 {
 }
 
 p {
-  font-family: Ubuntu-Regular;
   font-size: 14px;
   line-height: 1.7;
   color: #666;
@@ -165,7 +155,6 @@ iframe {
 }
 
 .login100-form-title {
-  font-family: Ubuntu-Bold;
   font-size: 50px;
   color: #ffffff;
   line-height: 1.2;
@@ -185,7 +174,7 @@ iframe {
 }
 
 .input100 {
-  font-family: Ubuntu-Bold;
+  font-family: "Epilogue", sans-serif;
   color: #403866;
   line-height: 1.2;
   font-size: 18px;
@@ -244,7 +233,7 @@ iframe {
 }
 
 .label-checkbox100 {
-  font-family: Ubuntu-Regular;
+  font-family: "Epilogue", sans-serif;  
   font-size: 16px;
   color: #999;
   line-height: 1.2;

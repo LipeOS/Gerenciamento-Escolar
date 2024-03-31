@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/open-book.png" type="image/x-icon">
+  <title>Frequêcia</title>
+  <style>
+    /* Seu código CSS aqui */
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script type="text/babel">
+    
+    function CreateNewLesson() {
+      const lessonNumber = prompt('Digite o número da aula:');
+      const lessonId = prompt('Digite o ID da aula:');
+      const lessonDate = prompt('Digite a data da aula (DD/MM/AAAA):');
+      const lessonContent = prompt('Digite o conteúdo da aula:');
+
+      if (lessonNumber && lessonId && lessonDate && lessonContent) {
+        const newLesson = (
+          <tr key={lessonId}>
+            <td>{lessonNumber}</td>
+            <td>{lessonId}</td>
+            <td>{lessonDate}</td>
+            <td>{lessonContent}</td>
+          </tr>
+        );
+
+        const lessonTable = document.getElementById('lesson-table');
+        ReactDOM.render(newLesson, lessonTable);
+      } else {
+        alert('Por favor, preencha todos os campos.');
+      }
+    }
+
+    function deleteLesson(id) {
+      const lessonTable = document.getElementById('lesson-table');
+      const lessonRow = Array.from(lessonTable.children).find(row => row.key === id);
+      lessonTable.removeChild(lessonRow);
+    }
+
+    function App() {
+      const [fadeIn, setFadeIn] = React.useState(false);
+      const [lessons, setLessons] = React.useState([]);
+
+      React.useEffect(() => {
+        // Animação de aparecer ao carregar a página
+        setFadeIn(true);
+        // Verificar se já existem aulas criadas
+        const storedLessons = JSON.parse(localStorage.getItem('lessons'));
+        if (storedLessons) {
+          setLessons(storedLessons);
+        }
+      }, []);
+
+      const saveLesson = (lesson) => {
+        const updatedLessons = [...lessons, lesson];
+        setLessons(updatedLessons);
+        localStorage.setItem('lessons', JSON.stringify(updatedLessons));
+      };
+
+      const handleCreateLesson = () => {
+        CreateNewLesson();
+      };
+
+      return (
+        <div className={`container ${fadeIn ? 'fade-in' : ''}`}>
+          <nav className="navbar">
+            <div className="navbar-left">
+              <span>Campus-Digital</span>
+            </div>
+            <div className="navbar-center">
+              <span>Conteúdo</span>
+            </div>
+            <div className="navbar-right">
+            </div>
+          </nav>
+          <div className="links-container">
+            <a href="../conteudo/index.html" className="link">Conteúdo</a>
+            <a href="" className="link">Frequência</a>
+            <a href="#" className="link">Notas</a>
+          </div>
+          <div className="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>ID</th>
+                  <th>Data</th>
+                </tr>
+              </thead>
+              <tbody id="lesson-table">
+                {lessons.map((lesson) => (
+                  <tr key={lesson.id}>
+                    <td>{lesson.number}</td>
+                    <td>{lesson.id}</td>
+                    <td>{lesson.date}</td>
+                    <td>{lesson.content}</td>
+                    <td><span className="delete-lesson" onClick={() => deleteLesson(lesson.id)}>&#128465;</span></td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      );
+    }
+
+    
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+</body>
+</html>
